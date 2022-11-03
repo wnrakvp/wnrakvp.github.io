@@ -1,7 +1,7 @@
 import profilePicture from "../assets/myProfilePicture.jpg";
 const Profile = () => {
   return (
-    <div className="relative border rounded-3xl font-quicksand shadow-lg my-5 lg:w-min">
+    <div className="relative border rounded-3xl font-quicksand shadow-lg my-5 lg:w-min dark:bg-slate-600">
       <div className="flex flex-col">
         <img
           src={profilePicture}
