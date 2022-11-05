@@ -1,8 +1,10 @@
 import reactLogo from "../assets/react.svg";
 import tailwindLogo from "../assets/tailwindcss.svg";
 import viteLogo from "../assets/vite.svg";
+import { motion } from "framer-motion";
 const InformationBar = () => {
-    return ( 
+    return (
+        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}}>
         <div className="relative p-5 my-2 border rounded-3xl bg-white shadow-lg font-quicksand">
         <p className="my-2 absolute -top-5 left-2 border rounded-lg bg-white px-2">Supported By</p>
         <div className="flex gap-7 justify-center">
@@ -12,6 +14,7 @@ const InformationBar = () => {
         </div>
             {/* <p className="text-center">Using This..</p> */}
         </div>
+        </motion.div>
      );
 }
  
