@@ -1,7 +1,26 @@
 import profilePicture from "../assets/myProfilePicture.jpg";
+import { motion } from "framer-motion";
+
+const profileVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const Profile = () => {
   return (
-    <div className="relative border rounded-3xl font-quicksand shadow-lg my-5 lg:w-min dark:bg-slate-600">
+    <motion.div
+      className="relative border rounded-3xl font-quicksand shadow-lg my-5 lg:w-min dark:bg-slate-600"
+      variants={profileVariant}
+      initial="hidden"
+      animate="visible"
+    >
       <div className="flex flex-col">
         <img
           src={profilePicture}
@@ -137,10 +156,12 @@ const Profile = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="py-2 px-4 mb-2 border rounded-lg bg-gray-100">Contact Me</button>
+          <button className="py-2 px-4 mb-2 border rounded-lg bg-gray-100">
+            Contact Me
+          </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

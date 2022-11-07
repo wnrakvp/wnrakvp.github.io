@@ -1,10 +1,11 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 
 const DropDown = () => {
   const links = [
     {
-      href: "/about",
+      href: "/",
       label: "About Me",
     },
     {
@@ -55,11 +56,11 @@ const DropDown = () => {
                 <div className="px-1 py-1 text-left">
                   <Menu.Item key={link.href} as={Fragment}>
                     {({ active }) => (
-                      <a
-                        href={link.href}
+                      <Link
+                        to={link.href}
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>

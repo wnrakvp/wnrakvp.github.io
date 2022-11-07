@@ -1,24 +1,28 @@
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="font-quicksand p-3 mt-2 border rounded-3xl justify-center bg-white hidden lg:flex flex-row w-min gap-2 ml-auto shadow-lg">
-      <div className="border rounded-lg p-4 bg-gray-100 cursor-pointer">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6 mx-auto"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-            />
-          </svg>
-          <p>About</p>
-      </div>
-      <div className="border rounded-lg p-4 bg-gray-100 cursor-pointer">
+      <Link to="/" className="border rounded-lg p-4 bg-gray-100 cursor-pointer hover:transition hover:text-white hover:bg-black">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6 mx-auto"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+        <p>About</p>
+      </Link>
+      <Link
+        to="/resume"
+        className="border rounded-lg p-4 bg-gray-100 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -34,8 +38,11 @@ const NavBar = () => {
           />
         </svg>
         <p>Resume</p>
-      </div>
-      <div className="border rounded-lg p-4 bg-gray-100 cursor-pointer">
+      </Link>
+      <Link
+        to="/project"
+        className="border rounded-lg p-4 bg-gray-100 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -51,8 +58,11 @@ const NavBar = () => {
           />
         </svg>
         <p>Project</p>
-      </div>
-      <div className="border rounded-lg p-4 bg-gray-100 cursor-pointer">
+      </Link>
+      <Link
+        to="/contact"
+        className="border rounded-lg p-4 bg-gray-100 cursor-pointer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -68,7 +78,7 @@ const NavBar = () => {
           />
         </svg>
         <p>Contact</p>
-      </div>
+      </Link>
     </div>
   );
 };
