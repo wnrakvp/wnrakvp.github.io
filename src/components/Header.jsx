@@ -19,7 +19,7 @@ const Header = () => {
               2000,
             ]}
             className="my-auto ml-2 text-sm md:text-md lg:text-2xl tracking-widest"
-            repeat={Infinity}
+            repeat={1}
             deletionSpeed={60}
           />
         </div>

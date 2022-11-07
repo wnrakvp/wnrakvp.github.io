@@ -14,16 +14,28 @@ function App() {
       <Header />
       <div className="relative px-10">
         <NavBar />
-        <div className="lg:flex flex-row-reverse">
+        <div className="lg:flex">
+          <Profile />
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<Content title="ABOUT" />} />
-              <Route path="/resume" element={<Content title="RESUME" />} />
-              <Route path="/project" element={<Content title="PROJECT" />} />
-              <Route path="/contact" element={<Content title="CONTACT" />} />
+              <Route
+                path="/"
+                element={<Content title="About Me" component="about" />}
+              />
+              <Route
+                path="/resume"
+                element={<Content title="Resume" component="resume" />}
+              />
+              <Route
+                path="/project"
+                element={<Content title="Project" component="project" />}
+              />
+              <Route
+                path="/contact"
+                element={<Content title="Contact" component="contact" />}
+              />
             </Routes>
           </AnimatePresence>
-          <Profile />
         </div>
         <InformationBar />
       </div>

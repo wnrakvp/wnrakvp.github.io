@@ -27,10 +27,10 @@ const Profile = () => {
           alt="My Photo"
           className="w-56 rounded-2xl shadow-xl mx-auto m-3"
         />
-        <p className="mx-auto font-bold text-xl">Wannarat Arkardvipart</p>
-        <p className="mx-auto text-sm mb-2">
+        <p className="mx-auto my-5 text-xl">Wannarat Arkardvipart</p>
+        {/* <p className="mx-auto text-sm mb-2">
           Co-Pilot at Thai Airways International
-        </p>
+        </p> */}
         <div className="flex gap-2 justify-center my-2">
           <div className="border bg-gray-100 p-3 rounded-lg">
             <svg
