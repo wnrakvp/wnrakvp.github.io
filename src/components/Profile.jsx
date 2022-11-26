@@ -1,4 +1,5 @@
 import profilePicture from "../assets/myProfilePicture.jpg";
+import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 const profileVariant = {
@@ -16,17 +17,51 @@ const profileVariant = {
 const Profile = () => {
   return (
     <motion.div
-      className="relative border rounded-3xl font-quicksand shadow-lg my-5 lg:w-min dark:bg-slate-600"
+      className="relative border rounded-3xl font-quicksand shadow-lg my-5 lg:min-w-2xl dark:bg-slate-600"
       variants={profileVariant}
       initial="hidden"
       animate="visible"
     >
       <div className="flex flex-col">
-        <img
+        {/* <img
           src={profilePicture}
           alt="My Photo"
-          className="w-56 rounded-2xl shadow-xl mx-auto m-3"
-        />
+          className="w-56 rounded-2xl shadow-xl mx-auto m-3 -translate-y-28"
+        /> */}
+        <section className="max-w-2xl font-quicksand">
+          {/* <p className="text-2xl lg:text-3xl lg:mt-10 lg:mx-10 lg:text-center">About Me</p> */}
+          <TypeAnimation
+            sequence={[
+              "Hello, Nice to meet you !",
+              1000,
+              "I'm Freelance Developer",
+              2000,
+            ]}
+            className="my-auto text-sm md:text-md lg:text-2xl tracking-widest m-10 mt-5"
+            repeat={Infinity}
+            deletionSpeed={60}
+          />
+          <div className="group relative block bg-black rounded-2xl m-5">
+            <img
+              alt="Developer"
+              src={profilePicture}
+              className="absolute inset-0 rounded-2xl h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+            />
+
+            <div className="relative p-8 mt-5 rounded-lg">
+              <div className="mt-64">
+                <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p className="text-sm text-white">
+                    I'm a Self-Taught Developer. Currently I'm studying Master
+                    Degree in Software Engineering at Chulalongkorn University.
+                    Interesting in Software Development (Cloud-Native) & Cloud
+                    Computing
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <p className="mx-auto my-5 text-xl">Wannarat Arkardvipart</p>
         {/* <p className="mx-auto text-sm mb-2">
           Co-Pilot at Thai Airways International
@@ -69,7 +104,7 @@ const Profile = () => {
             </svg>
           </div>
         </div>
-        <div className="flex flex-col border bg-gray-100 rounded-lg m-4 gap-2">
+        <div className="flex flex-col border bg-gray-100 rounded-lg m-6 gap-2">
           <div className="border-b flex ml-5 gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -155,11 +190,11 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="py-2 px-4 mb-2 border rounded-lg bg-gray-100">
             Contact Me
           </button>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

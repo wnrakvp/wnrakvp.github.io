@@ -7,7 +7,7 @@ import DropDown from "./DropDown";
 const Header = () => {
   const [enabled, setEnabled] = useState(false);
   return (
-    <section className="sticky top-0 z-50 bg-white border-b rounded-lg">
+    <section className="sticky top-0 z-50 bg-white border-b rounded-lg lg:hidden">
       <div className="font-quicksand flex mx-2 justify-between ">
         <div className="flex">
           <DropDown />
