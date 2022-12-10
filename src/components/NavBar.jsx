@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className="font-quicksand p-3 mt-2 border rounded-3xl justify-center bg-white hidden lg:flex flex-row w-min gap-2 ml-auto shadow-lg">
+    <div className="font-quicksand p-3 mt-2 border rounded-3xl justify-center bg-white hidden lg:flex flex-row w-min gap-2 mx-auto shadow-lg">
       <Link to="/" className="border rounded-lg p-4 bg-gray-100 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"

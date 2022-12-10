@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import About from "./About";
 import Resume from "./Resume";
+import Project from "./Project";
+import Contact from "./Contact";
 const Content = ({ title, component }) => {
   return (
     <motion.div
@@ -11,8 +13,8 @@ const Content = ({ title, component }) => {
     >
       { component === 'about' && <About/>}
       { component === 'resume' && <Resume/>}
-      {/* { component === 'project' && <Resume/>} */}
-      {/* { component === 'contact' && <Resume/>} */}
+      { component === 'project' && <Project/>}
+      { component === 'contact' && <Contact/>}
     </motion.div>
   );
 };
