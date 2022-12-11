@@ -30,7 +30,7 @@ const Profile = () => {
         /> */}
         <section className="max-w-2xl font-quicksand">
           {/* <p className="text-2xl lg:text-3xl lg:mt-10 lg:mx-10 lg:text-center">About Me</p> */}
-          <TypeAnimation
+          {/* <TypeAnimation
             sequence={[
               "Hello, Nice to meet you !",
               1000,
@@ -40,8 +40,8 @@ const Profile = () => {
             className="my-auto text-sm md:text-md lg:text-2xl tracking-widest m-10 mt-5"
             repeat={Infinity}
             deletionSpeed={60}
-          />
-          <div className="group relative block bg-black rounded-2xl m-5">
+          /> */}
+          {/* <div className="group relative block bg-black rounded-2xl m-5">
             <img
               alt="Developer"
               src={profilePicture}
@@ -60,7 +60,7 @@ const Profile = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         <p className="mx-auto my-5 text-xl">Wannarat Arkardvipart</p>
         {/* <p className="mx-auto text-sm mb-2">

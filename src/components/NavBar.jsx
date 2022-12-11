@@ -1,8 +1,10 @@
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
+import { Tab } from "@headlessui/react"
 const NavBar = () => {
   return (
     <div className="font-quicksand p-3 mt-2 border rounded-3xl justify-center bg-white hidden lg:flex flex-row w-min gap-2 mx-auto shadow-lg">
-      <Link to="/" className="border rounded-lg p-4 bg-gray-100 cursor-pointer">
+      <Link to="/" className="border rounded-lg p-4 bg-gray-100 cursor-pointer hover:text-gray-400">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -21,7 +23,7 @@ const NavBar = () => {
       </Link>
       <Link
         to="/resume"
-        className="border rounded-lg p-4 bg-gray-100 cursor-pointer"
+        className="border rounded-lg p-4 bg-gray-100 cursor-pointer hover:text-gray-400"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +43,7 @@ const NavBar = () => {
       </Link>
       <Link
         to="/project"
-        className="border rounded-lg p-4 bg-gray-100 cursor-pointer"
+        className="border rounded-lg p-4 bg-gray-100 cursor-pointer hover:text-gray-400"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +63,7 @@ const NavBar = () => {
       </Link>
       <Link
         to="/contact"
-        className="border rounded-lg p-4 bg-gray-100 cursor-pointer"
+        className="border rounded-lg p-4 bg-gray-100 cursor-pointer hover:text-gray-400"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

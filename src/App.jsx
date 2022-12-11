@@ -15,7 +15,7 @@ function App() {
       <div className="relative px-10">
         <NavBar />
         <div className="lg:flex">
-          <Profile />
+          {/* <Profile /> */}
           <AnimatePresence exitBeforeEnter>
             <Routes location={location} key={location.pathname}>
               <Route
